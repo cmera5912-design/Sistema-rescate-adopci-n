@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Listado de Rescates y Solicitudes - Sistema de Rescate</title>
+    <title>Lista de Rescates y Solicitudes - Sistema de Rescate</title>
 </head>
 <body>
     <header>
-        <h1>Control de Rescates y Solicitudes</h1>
+        <h1>Gestión de Rescates y Adopciones</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -19,33 +19,31 @@
     <main>
         <section>
             <h2>Listado de Animales Rescatados</h2>
-            <table border="1">
-                <caption>Tabla de control de animales registrados en el sistema</caption>
+            <p>Consulta el estado actual de los animales registrados en el sistema de la fundación.</p>
+            
+            <table>
                 <thead>
                     <tr>
-                        <th>ID Animal</th>
-                        <th>Nombre</th>
+                        <th>ID</th>
+                        <th>Nombre / Seña</th>
                         <th>Especie</th>
-                        <th>Raza</th>
                         <th>Estado de Salud</th>
                         <th>Estado de Adopción</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>101</td>
-                        <td>Firulais</td>
+                        <td>001</td>
+                        <td>Manchas</td>
                         <td>Perro</td>
-                        <td>Mestizo</td>
-                        <td>Bueno, vacunado</td>
+                        <td>Recuperado de desnutrición leve</td>
                         <td>Disponible</td>
                     </tr>
                     <tr>
-                        <td>102</td>
+                        <td>002</td>
                         <td>Luna</td>
                         <td>Gato</td>
-                        <td>Siamés mix</td>
-                        <td>En tratamiento por desnutrición</td>
+                        <td>Vacunada y esterilizada</td>
                         <td>En proceso</td>
                     </tr>
                 </tbody>
@@ -53,14 +51,12 @@
         </section>
 
         <section>
-            <h2>Solicitudes de Adopción Recientes</h2>
+            <h2>Solicitudes de Adopción Pendientes</h2>
+            <p>Relación de ciudadanos postulantes para la adopción de mascotas rescatadas.</p>
+            
             <ul>
-                <li>
-                    <strong>Solicitud #01</strong> - Adoptante: Carlos Vera - Mascota: Firulais (ID: 101) - Estado: <mark>Pendiente</mark>
-                </li>
-                <li>
-                    <strong>Solicitud #02</strong> - Adoptante: María López - Mascota: Luna (ID: 102) - Estado: <mark>Aprobada</mark>
-                </li>
+                <li><strong>Carlos Mendoza</strong> - Postulante para adopción de: <em>Luna</em> (Estado: En revisión)</li>
+                <li><strong>Ana Patricia Vera</strong> - Postulante para adopción de: <em>Manchas</em> (Estado: Aprobado)</li>
             </ul>
         </section>
     </main>
