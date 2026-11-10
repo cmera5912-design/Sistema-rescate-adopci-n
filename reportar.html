@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Animal Rescatado - Sistema de Rescate</title>
+</head>
+<body>
+    <header>
+        <h1>Módulo de Registro de Rescates</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Rescate</a></li>
+                <li><a href="rescates.html">Ver Rescates y Solicitudes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de Registro de Nuevo Animal Rescatado</h2>
+            <p>Complete los datos del animal rescatado según los requerimientos operativos del voluntario.</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información General del Animal</legend>
+                    
+                    <p>
+                        <label for="nombre">Nombre provisional o seña:</label><br>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Manchas">
+                    </p>
+
+                    <p>
+                        <label for="especie">Especie:</label><br>
+                        <select id="especie" name="especie" required>
+                            <option value="">Seleccione...</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="raza">Raza:</label><br>
+                        <input type="text" id="raza" name="raza" required placeholder="Ej. Mestizo">
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad estimada (meses/años):</label><br>
+                        <input type="number" id="edad" name="edad" min="0" max="25" required>
+                    </p>
+
+                    <p>
+                        <label for="estadoSalud">Estado de salud inicial:</label><br>
+                        <textarea id="estadoSalud" name="estadoSalud" rows="4" cols="40" required placeholder="Describa lesiones, nutrición o estado general..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="estadoAdopcion">Estado de adopción:</label><br>
+                        <select id="estadoAdopcion" name="estadoAdopcion" required>
+                            <option value="Disponible">Disponible</option>
+                            <option value="En proceso">En proceso</option>
+                            <option value="Adoptado">Adoptado</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Registrar Animal</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Control de Rescate y Adopción Animal.</p>
+    </footer>
+</body>
+</html>
